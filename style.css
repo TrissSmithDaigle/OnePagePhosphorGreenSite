@@ -1,0 +1,74 @@
+/* 
+Web page style
+style code for a github page
+Triss Smith-Daigle, 10/26/2026
+additional comments
+*/
+
+body {
+
+ /* see https://developer.mozilla.org/en-US/docs/Web/CSS/font for more about fonts */
+ /* also https://fonts.google.com for additional fonts */
+
+      font-family: Cascadia Code, Cascadia Code;
+      background-color: #000000;
+      color: #00FF00;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+/*==========navigation============== */
+
+    nav {
+      background-color: #00AA00;
+      padding: 10px 0;
+     /*flexible box layout see: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout */
+      display: flex;
+     /* align items along the main axis of a flex container */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+      justify-content: center;
+
+     /*define the spacing between rows and columns in layout models */
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/gap*/
+      gap: 10px;
+    }
+
+/* default navigation */
+    nav button {
+      background-color: #001A00;
+      color: #00AA00;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+        
+     /* see https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+      border-radius: 5px;
+    }
+
+/* navigation button hover style */
+    nav button:hover {
+      background-color: #00D100;
+      color: #001A00;
+    }
+
+/* active page button */
+    nav button.active {
+      background-color: #007500;
+      color: #001A00;
+    }
+
+div {
+    text-align: left;
+}
+
+/*==========content============== */
+    .page {
+      display: none;
+      padding: 40px;
+    }
+
+    .page.active {
+      display: block;
+    }
